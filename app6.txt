@@ -1,0 +1,40 @@
+Instance method in Java
+
+class Average{
+public void avgOfThreeNumbers(int a,int b ,int c)
+{
+      int result;
+    result=(a+b+c)/3;
+     System.out.println("Average of three numbers:"+result);
+      
+}
+}
+
+class Number {
+  
+    public static void main(String[] args) {
+        Average s=new Average();
+        s.avgOfThreeNumbers(23,45,34);
+         s.avgOfThreeNumbers(34,23,45);
+   
+    }
+}
+===================================================
+Static method in Java
+
+
+class Number {
+    public static void avgOfThreeNumbers(int a,int b ,int c)
+{
+      int result;
+    result=(a+b+c)/3;
+     System.out.println("Average of three numbers:"+result);
+}
+  
+    public static void main(String[] args) {
+        
+        avgOfThreeNumbers(23,45,34);
+        avgOfThreeNumbers(34,23,45);
+   
+    }
+}

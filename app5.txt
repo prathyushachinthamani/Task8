@@ -1,0 +1,39 @@
+Instance method in Java
+
+class Squr{
+public void squrOfTwoNumbers(int a,int b)
+{
+      int result;
+    result=(a*a)+(b*b)+(2*a*b);
+     System.out.println("Square of two numbers:"+result);    
+}
+}
+
+class Square1 {
+  
+    public static void main(String[] args) {
+        Squr s=new Squr();
+        s.squrOfTwoNumbers(23,45);
+         s.squrOfTwoNumbers(34,23);
+   
+    }
+}
+=============================================================
+Static method in java
+
+
+public class Square1 {
+     public static  void squr(int a,int b)
+     {
+        
+        int result;
+         result=(a*a)+(b*b)+(2*a*b);
+         System.out.println("square of two numbers:"+result);
+     }
+  
+    public static void main(String[] args) {
+        System.out.println("static method");
+        squr(2,3);
+        squr(35,67);
+    }
+}
